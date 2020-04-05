@@ -1,0 +1,3 @@
+jitsi_domain: "{{inventory_hostname}}"
+turncredentials_secret: "{{ ansible_local['jitsi-meet'].turncredentials_secret }}"
+prosody_ip: localhost

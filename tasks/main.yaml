@@ -1,0 +1,14 @@
+---
+
+- import_tasks: local_facts.yaml
+
+- import_role:
+    name: jitsi-prosody
+- import_role:
+    name: jicofo
+- import_role:
+    name: jitsi-videobridge
+- import_role:
+    name: jitsi-meet-web
+#- import_role:
+#    name: coturn
