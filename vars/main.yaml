@@ -1,3 +1,1 @@
 ---
-_local_facts:
-  turncredentials_secret: "{% if not ansible_local['jitsi-meet'].turncredentials_secret is defined %}{{ lookup('password', '/dev/null length=16 chars=ascii_letters') }}{% else %}{{ ansible_local['jitsi-meet'].turncredentials_secret }}{% endif %}"
